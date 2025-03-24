@@ -12,14 +12,15 @@ https://www.ceneo.pl/84514582#tab=click
 ## Analysis of the structure of the webpage
 |Component|Selector|Variable|
 |---------|--------|--------|
-|opinion ID |#opinion-id | |
-|author |.author | |
-|reccommendation |.recommendation | |
-|number of stars |.stars .rating | |
-|content of opinion |.opinion-content | |
-|list of advantages |.advantages li | |
-|list of disadvantages |.disadvantages li | |
-|for how many helpful |.helpful-count | |
-|for how many unhelpful |.unhelpful-count | |
-|publishing date |.publish-date | |
-|purchase date |.purchase-date | |
+|opinion |div.js_product-review |opninon |
+|opinion ID |[data-entry-id] |opinion_id |
+|author |user-post__author-name |author |
+|reccommendation |span.user-post__author-recomendation > em |recommendation |
+|number of stars |span.user-post__score-count |stars |
+|content of opinion |div.user-post__text |content |
+|list of advantages |div.review-feature__item--positive|pros |
+|list of disadvantages |div.review-feature__item--negative |cons |
+|for how many helpful |button.vote-yes[data-total-vote] |vote_yes |
+|for how many unhelpful |button.vote-no[data-total-vote] |vote_no |
+|publishing date |spam.user-post__published > time:nth-child(1)[datetime] |published |
+|purchase date |spam.user-post__published > time:nth-child(2)[datetime] |purchased |
